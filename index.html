@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center py-3">
+            <h1>
+                Task Management Application
+            </h1>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-8 offset-md-2">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="task" class="form-label">
+                                Enter your task:
+                            </label>
+                            <input type="text" class="form-control" id="task" name="task">
+                        </div>
+                        <button type="submit" onclick="addTask()" class="btn btn-primary">
+                            Add Task
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 offset-md-3">
+                    <div id="task-list">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
