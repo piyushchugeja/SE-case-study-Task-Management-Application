@@ -73,4 +73,11 @@ function deleteTask(index) {
     document.getElementById(`task${index}`).remove();
 }
 
+function completeTask(index) {
+    var task = document.getElementById(`task${index}`);
+    task.classList.toggle("completed");
+    task.querySelector(".btn-outline-success").classList.toggle("disabled");
+    task.querySelector(".btn-outline-danger").classList.toggle("disabled");
+}
+
 renderTasks();
